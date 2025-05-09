@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  /* Font */
+  --font-outfit: "Outfit", sans-serif;
+
+  /* Colors */
+  --color-celestial-blue: #5398BE;
+  --color-oxford-blue: #14213D;
+  --color-beige: #EEF4D4;
+
+  /* Breakpoints */
+  --breakpoint-xs: 400px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-outfit);
+    background-color: var(--color-oxford-blue);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a,
+  span,
+  input,
+  button {
+    display: block;
+  }
+
+  input,
+  button {
+    background: none;
+    border: none;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
